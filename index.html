@@ -7,6 +7,9 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
+    <!---------chat bot----------------->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="./css/chat.css">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -33,6 +36,56 @@
 </head>
 
 <body>
+
+    <div class="chatbox-wrapper">
+		<div class="chatbox-toggle">
+			<i class='bx bx-message-dots'></i>
+		</div>
+		<div class="chatbox-message-wrapper">
+			<div class="chatbox-message-header">
+				<div class="chatbox-message-profile">
+					<img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" class="chatbox-message-image">
+					<div>
+						<h4 class="chatbox-message-name">Jonathan Doe</h4>
+						<p class="chatbox-message-status">online</p>
+					</div>
+				</div>
+				<div class="chatbox-message-dropdown">
+					<i class='bx bx-dots-vertical-rounded chatbox-message-dropdown-toggle'></i>
+					<ul class="chatbox-message-dropdown-menu">
+						<li>
+							<a href="#">Search</a>
+						</li>
+						<li>
+							<a href="#">Report</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="chatbox-message-content">
+				<h4 class="chatbox-message-no-message">You don't have message yet!</h4>
+				<!-- <div class="chatbox-message-item sent">
+					<span class="chatbox-message-item-text">
+						Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Quod, fugiat?
+					</span>
+					<span class="chatbox-message-item-time">08:30</span>
+				</div>
+				<div class="chatbox-message-item received">
+					<span class="chatbox-message-item-text">
+						Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Quod, fugiat?
+					</span>
+					<span class="chatbox-message-item-time">08:30</span>
+				</div> -->
+			</div>
+			<div class="chatbox-message-bottom">
+				<form action="#" class="chatbox-message-form">
+					<textarea rows="1" placeholder="Type message..." class="chatbox-message-input"></textarea>
+					<button type="submit" class="chatbox-message-submit"><i class='bx bx-send' ></i></button>
+				</form>
+			</div>
+		</div>
+	</div>
+
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -211,7 +264,7 @@
                             </div>
                             <h5 class="mb-3">Website Testing</h5>
                             <p class="m-0">"In this course, master the art of website testing, learning to assess functionality, identify errors, vulnerabilities, and effectively evaluate websites."</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                            <a class="btn btn-square" href="./website testing.html"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -222,7 +275,7 @@
                             <h5 class="mb-3">Web Design</h5>
                             <p class="m-0">
                                 "Unlock the world of web design, learning to create animated websites with HTML, CSS, and JavaScript, mastering shortcuts to build stunning frontend designs in just 3 days."</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                            <a class="btn btn-square" href="./web designing.html"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -232,7 +285,7 @@
                             </div>
                             <h5 class="mb-3">Social Media Marketing</h5>
                             <p class="m-0">"In this course, discover the art of social media marketing: attracting customers to purchase your product through persuasive strategies, without explicitly telling them to buy, with practical implementation."</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                            <a class="btn btn-square" href="./social media marketing.html"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -243,7 +296,7 @@
                             <h5 class="mb-3">Email Marketing</h5>
                             <p class="m-0">
                                 "In this course, enhance your email writing skills to effectively attract and engage clients, customers, and prospects, making it the ideal choice for mastering impactful email marketing with practical implementation."</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                            <a class="btn btn-square" href="./email marketing.html"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -253,7 +306,7 @@
                             </div>
                             <h5 class="mb-3">Bootstrap</h5>
                             <p class="m-0">Learn to create stunning websites with Bootstrap, a free code library offering endless possibilities; simply copy, paste, and click on your desired elements to bring your creative ideas to life—all at an affordable price.</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                            <a class="btn btn-square" href="./bootstrap.html"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -263,7 +316,7 @@
                             </div>
                             <h5 class="mb-3">C++</h5>
                             <p class="m-0">Learn full-stack C++ programming with skilled instructors, exploring its versatile nature and distinct identity, commonly used for backend development, loops, and creating amazing solutions—all at affordable prices.</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                            <a class="btn btn-square" href="./c++.html"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -541,9 +594,6 @@
         </div>
         <!-- Footer End -->
 
-
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
     <!-- JavaScript Libraries -->
@@ -559,6 +609,8 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="./js/chat.js"></script>
+    
 </body>
 
 </html>
